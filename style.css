@@ -69,6 +69,8 @@ a {
 
 .nav-links {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 
     gap: 30px;
 }
@@ -223,9 +225,9 @@ a {
 
 
 .button.primary:hover {
-    transform: translateY(-2px);
-
     background: #67f8f4;
+
+    transform: translateY(-2px);
 }
 
 
@@ -267,6 +269,7 @@ a {
 
 
 .content-wrapper {
+    width: 100%;
     max-width: 1120px;
 
     margin: auto;
@@ -337,7 +340,8 @@ a {
     border-color: #4deeea;
 
     box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.3);
+        0 12px 35px
+        rgba(0, 0, 0, 0.3);
 }
 
 
@@ -428,11 +432,6 @@ a {
 }
 
 
-.project-link:not(.coming-soon):hover {
-    color: #4deeea;
-}
-
-
 .coming-soon {
     color: #747481;
 
@@ -456,6 +455,93 @@ a {
 
 .about-text p {
     margin-bottom: 20px;
+}
+
+
+
+/* ==========================================================
+   CV
+========================================================== */
+
+.cv-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+
+    gap: 30px;
+
+    max-width: 850px;
+}
+
+
+.cv-card {
+    background: #121219;
+
+    border: 1px solid #282832;
+
+    border-radius: 8px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.cv-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #4deeea;
+
+    box-shadow:
+        0 12px 35px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+.cv-language {
+    color: #4deeea;
+
+    font-size: 0.7rem;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.cv-card h3 {
+    color: #f5f5f5;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 8px;
+}
+
+
+.cv-card p:not(.cv-language) {
+    color: #a8a8b2;
+}
+
+
+.cv-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
 }
 
 
@@ -508,12 +594,8 @@ a {
     padding: 6px 0;
 
     border-bottom:
-        1px solid rgba(
-            255,
-            255,
-            255,
-            0.04
-        );
+        1px solid
+        rgba(255, 255, 255, 0.04);
 }
 
 
@@ -570,6 +652,9 @@ a {
 
 .contact-info a {
     color: #4deeea;
+
+    transition:
+        color 0.2s ease;
 }
 
 
@@ -603,13 +688,13 @@ footer p + p {
 
 
 /* ==========================================================
-   MOBILE
+   TABLET / SMALL NAVIGATION
 ========================================================== */
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
 
     .navbar {
-        padding: 0 5%;
+        padding: 15px 5%;
     }
 
 
@@ -621,11 +706,30 @@ footer p + p {
     .nav-links {
         width: 100%;
 
-        justify-content: space-between;
+        justify-content: center;
 
-        gap: 10px;
+        gap: 20px;
+    }
 
-        font-size: 0.83rem;
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        min-height: 60px;
+    }
+
+
+    .nav-links {
+        gap: 10px 16px;
+
+        font-size: 0.82rem;
     }
 
 
@@ -663,13 +767,18 @@ footer p + p {
     }
 
 
-    .hero-buttons {
-        width: 100%;
+    .cv-grid {
+        grid-template-columns: 1fr;
     }
 
 
-    .button {
-        text-align: center;
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-buttons {
+        width: 100%;
     }
 
 }
@@ -684,6 +793,8 @@ footer p + p {
 
     .nav-links {
         font-size: 0.75rem;
+
+        gap: 8px 12px;
     }
 
 
@@ -694,6 +805,18 @@ footer p + p {
 
     .hero h2 {
         font-size: 1.3rem;
+    }
+
+
+    .button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .cv-buttons .button {
+        width: 100%;
     }
 
 }
