@@ -1,6 +1,6 @@
-/* ------------------------------
+/* ==========================================================
    BASIC SETUP
------------------------------- */
+========================================================== */
 
 * {
     box-sizing: border-box;
@@ -8,16 +8,24 @@
     padding: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
     background: #09090d;
     color: #f5f5f5;
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
     line-height: 1.6;
 }
+
 
 a {
     color: inherit;
@@ -25,9 +33,10 @@ a {
 }
 
 
-/* ------------------------------
+
+/* ==========================================================
    NAVIGATION
------------------------------- */
+========================================================== */
 
 .navbar {
     min-height: 70px;
@@ -38,7 +47,7 @@ a {
 
     padding: 0 8%;
 
-    background: rgba(9, 9, 13, 0.95);
+    background: rgba(9, 9, 13, 0.96);
 
     border-bottom: 1px solid #24242d;
 
@@ -48,45 +57,55 @@ a {
     z-index: 100;
 }
 
-.logo {
-    font-weight: bold;
-    letter-spacing: 2px;
 
+.logo {
     color: #4deeea;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
 }
+
 
 .nav-links {
     display: flex;
+
     gap: 30px;
 }
+
 
 .nav-links a {
     color: #bbbbc5;
 
-    transition: 0.2s;
+    transition:
+        color 0.2s ease;
 }
+
 
 .nav-links a:hover {
     color: #4deeea;
 }
 
 
-/* ------------------------------
+
+/* ==========================================================
    HERO
------------------------------- */
+========================================================== */
 
 .hero {
     min-height: 85vh;
 
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 90px 10%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    padding: 80px 10%;
-
-    max-width: 1400px;
-    margin: auto;
 }
+
 
 .eyebrow {
     color: #4deeea;
@@ -99,24 +118,37 @@ a {
     margin-bottom: 15px;
 }
 
+
 .hero h1 {
-    font-size: clamp(3rem, 8vw, 7rem);
+    font-size:
+        clamp(
+            3rem,
+            8vw,
+            7rem
+        );
 
     line-height: 1;
 
     margin-bottom: 15px;
 }
 
-.hero h2 {
-    font-size: clamp(1.4rem, 3vw, 2.3rem);
 
+.hero h2 {
     color: #a56eff;
+
+    font-size:
+        clamp(
+            1.4rem,
+            3vw,
+            2.3rem
+        );
 
     margin-bottom: 30px;
 }
 
+
 .hero-text {
-    max-width: 650px;
+    max-width: 700px;
 
     color: #bdbdc8;
 
@@ -124,9 +156,37 @@ a {
 }
 
 
-/* ------------------------------
+.hero-contact {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px 25px;
+
+    margin-top: 22px;
+
+    color: #9999a5;
+
+    font-size: 0.95rem;
+}
+
+
+.hero-contact a {
+    color: #4deeea;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.hero-contact a:hover {
+    color: #a56eff;
+}
+
+
+
+/* ==========================================================
    BUTTONS
------------------------------- */
+========================================================== */
 
 .hero-buttons {
     display: flex;
@@ -137,6 +197,7 @@ a {
     margin-top: 35px;
 }
 
+
 .button {
     display: inline-block;
 
@@ -146,17 +207,27 @@ a {
 
     font-weight: bold;
 
-    transition: 0.2s;
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        background 0.2s ease;
 }
+
 
 .button.primary {
     background: #4deeea;
+
     color: #09090d;
 }
 
+
 .button.primary:hover {
     transform: translateY(-2px);
+
+    background: #67f8f4;
 }
+
 
 .button.secondary {
     border: 1px solid #444451;
@@ -164,15 +235,20 @@ a {
     color: #dddddf;
 }
 
+
 .button.secondary:hover {
     border-color: #a56eff;
+
     color: #a56eff;
+
+    transform: translateY(-2px);
 }
 
 
-/* ------------------------------
-   SECTIONS
------------------------------- */
+
+/* ==========================================================
+   GENERAL SECTIONS
+========================================================== */
 
 .section {
     max-width: 1400px;
@@ -182,11 +258,20 @@ a {
     padding: 100px 10%;
 }
 
-.alternate {
-    background: #101016;
 
+.alternate {
     max-width: none;
+
+    background: #101016;
 }
+
+
+.content-wrapper {
+    max-width: 1120px;
+
+    margin: auto;
+}
+
 
 .section-heading {
     max-width: 700px;
@@ -194,29 +279,41 @@ a {
     margin-bottom: 50px;
 }
 
+
 .section-heading h2 {
-    font-size: 2.5rem;
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            2.7rem
+        );
 
     margin-bottom: 12px;
 }
 
-.section-heading p {
+
+.section-heading > p:not(.eyebrow) {
     color: #a5a5af;
 }
 
 
-/* ------------------------------
+
+/* ==========================================================
    PROJECTS
------------------------------- */
+========================================================== */
 
 .project-grid {
     display: grid;
 
     grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
 
     gap: 30px;
 }
+
 
 .project-card {
     background: #121219;
@@ -227,24 +324,32 @@ a {
 
     overflow: hidden;
 
-    transition: 0.25s;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
 }
+
 
 .project-card:hover {
     transform: translateY(-5px);
 
     border-color: #4deeea;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.3);
 }
+
 
 .project-image {
     width: 100%;
     height: 220px;
 
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
+
 
 .placeholder {
     background:
@@ -257,23 +362,29 @@ a {
     color: #666675;
 
     letter-spacing: 2px;
+
+    font-weight: bold;
+
+    text-align: center;
 }
+
 
 .project-content {
     padding: 25px;
 }
 
+
 .project-type {
     color: #4deeea;
 
     font-size: 0.7rem;
+    font-weight: bold;
 
     letter-spacing: 2px;
 
-    font-weight: bold;
-
     margin-bottom: 8px;
 }
+
 
 .project-content h3 {
     font-size: 1.6rem;
@@ -281,9 +392,11 @@ a {
     margin-bottom: 12px;
 }
 
-.project-content > p {
+
+.project-content > p:not(.project-type) {
     color: #aeafba;
 }
+
 
 .tags {
     display: flex;
@@ -294,17 +407,19 @@ a {
     margin: 20px 0;
 }
 
+
 .tags span {
     background: #20202a;
+
+    color: #c7c7d0;
 
     padding: 5px 9px;
 
     border-radius: 4px;
 
     font-size: 0.75rem;
-
-    color: #c7c7d0;
 }
+
 
 .project-link {
     color: #a56eff;
@@ -312,52 +427,68 @@ a {
     font-weight: bold;
 }
 
-.project-link:hover {
+
+.project-link:not(.coming-soon):hover {
     color: #4deeea;
 }
 
 
-/* ------------------------------
+.coming-soon {
+    color: #747481;
+
+    cursor: default;
+}
+
+
+
+/* ==========================================================
    ABOUT
------------------------------- */
+========================================================== */
 
 .about-text {
     max-width: 800px;
 
-    font-size: 1.1rem;
-
     color: #bdbdc6;
+
+    font-size: 1.1rem;
 }
+
 
 .about-text p {
     margin-bottom: 20px;
 }
 
 
-/* ------------------------------
+
+/* ==========================================================
    SKILLS
------------------------------- */
+========================================================== */
 
 .skills-grid {
     display: grid;
 
     grid-template-columns:
-        repeat(auto-fit, minmax(250px, 1fr));
+        repeat(
+            auto-fit,
+            minmax(250px, 1fr)
+        );
 
     gap: 40px;
 
-    max-width: 800px;
+    max-width: 850px;
 }
+
 
 .skill-group {
     background: #121219;
 
     padding: 30px;
 
-    border-radius: 8px;
-
     border: 1px solid #282832;
+
+    border-radius: 8px;
 }
+
 
 .skill-group h3 {
     color: #a56eff;
@@ -365,46 +496,92 @@ a {
     margin-bottom: 15px;
 }
 
+
 .skill-group ul {
     list-style: none;
 }
 
+
 .skill-group li {
+    color: #bcbcc6;
+
     padding: 6px 0;
 
-    color: #bcbcc6;
+    border-bottom:
+        1px solid rgba(
+            255,
+            255,
+            255,
+            0.04
+        );
 }
 
 
-/* ------------------------------
+.skill-group li:last-child {
+    border-bottom: none;
+}
+
+
+
+/* ==========================================================
    CONTACT
------------------------------- */
+========================================================== */
 
 .contact {
-    text-align: center;
-
     display: flex;
-
     flex-direction: column;
     align-items: center;
+
+    text-align: center;
 }
+
 
 .contact h2 {
-    font-size: 2.7rem;
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            2.7rem
+        );
 }
 
-.contact > p {
-    color: #a8a8b2;
 
-    max-width: 550px;
+.contact > p {
+    max-width: 600px;
+
+    color: #a8a8b2;
 
     margin-top: 15px;
 }
 
 
-/* ------------------------------
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 10px 25px;
+
+    margin-top: 25px;
+
+    color: #9999a5;
+}
+
+
+.contact-info a {
+    color: #4deeea;
+}
+
+
+.contact-info a:hover {
+    color: #a56eff;
+}
+
+
+
+/* ==========================================================
    FOOTER
------------------------------- */
+========================================================== */
 
 footer {
     text-align: center;
@@ -414,12 +591,20 @@ footer {
     color: #64646d;
 
     border-top: 1px solid #202028;
+
+    font-size: 0.85rem;
 }
 
 
-/* ------------------------------
+footer p + p {
+    margin-top: 4px;
+}
+
+
+
+/* ==========================================================
    MOBILE
------------------------------- */
+========================================================== */
 
 @media (max-width: 700px) {
 
@@ -427,21 +612,88 @@ footer {
         padding: 0 5%;
     }
 
-    .nav-links {
-        gap: 15px;
-
-        font-size: 0.85rem;
-    }
 
     .logo {
         display: none;
     }
 
-    .hero {
-        padding: 70px 7%;
+
+    .nav-links {
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 10px;
+
+        font-size: 0.83rem;
     }
 
-    .section {
-        padding: 70px 7%;
+
+    .hero {
+        min-height: auto;
+
+        padding:
+            90px
+            7%
+            70px;
     }
+
+
+    .section {
+        padding:
+            70px
+            7%;
+    }
+
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+
+    .hero-contact {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+
+    .button {
+        text-align: center;
+    }
+
+}
+
+
+
+/* ==========================================================
+   VERY SMALL SCREENS
+========================================================== */
+
+@media (max-width: 420px) {
+
+    .nav-links {
+        font-size: 0.75rem;
+    }
+
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+
 }
