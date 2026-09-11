@@ -1,688 +1,675 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Portfolio of Maria Huhnstock – Game Designer and Technical Designer focusing on gameplay design, systems, prototyping and technical implementation."
-    >
-
-    <title>
-        Maria Huhnstock | Game Design Portfolio
-    </title>
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Maria Huhnstock — Game Designer and Unity/C# developer creating focused, playable systems.">
+  <meta name="theme-color" content="#09090d">
+  <title>Maria Huhnstock | Game Design & Unity Development</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
-
 <body>
+  <a class="skip-link" href="#work">Skip to selected work</a>
 
+  <header class="site-header" data-header>
+    <a class="wordmark" href="#top">Maria Huhnstock</a>
 
-    <!-- ==================================================
-         NAVIGATION
-    =================================================== -->
-
-    <nav class="navbar">
-
-        <a
-            href="#home"
-            class="logo"
-        >
-            MARIA HUHNSTOCK
-        </a>
-
-
-        <div class="nav-links">
-
-            <a href="#projects">
-                Projects
-            </a>
-
-            <a href="#about">
-                About
-            </a>
-
-            <a href="#cv">
-                CV
-            </a>
-
-            <a href="#skills">
-                Skills
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </div>
-
-    </nav>
-
-
-
-    <!-- ==================================================
-         HERO
-    =================================================== -->
-
-    <header
-        id="home"
-        class="hero"
+    <button
+      class="menu-button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      data-menu-button
     >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">Open navigation</span>
+    </button>
 
-        <p class="eyebrow">
-            GAME DESIGN · TECHNICAL DESIGN · PROTOTYPING
-        </p>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
+      <a href="#work">Projects</a>
+      <a href="#profile">About</a>
+      <a href="#cv">CV</a>
+      <a href="mailto:Maria.Huhnstock@outlook.de">Contact</a>
+    </nav>
+  </header>
 
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">GAME DESIGN · UNITY DEVELOPMENT · PROTOTYPING</p>
 
-        <h1>
-            Maria Huhnstock
-        </h1>
-
-
-        <h2>
-            Game Designer & Technical Designer
-        </h2>
-
+        <h1>Maria Huhnstock</h1>
+        <h2>Game Designer & Unity Developer</h2>
 
         <p class="hero-text">
-            I enjoy developing creative game ideas,
-            designing gameplay systems and bringing them
-            to life through technical implementation.
+          I design gameplay systems and bring them to life in Unity and C#.
+          My portfolio projects are focused prototypes: small enough to build
+          independently, but complete enough to test, document and improve
+          through iteration.
         </p>
-
 
         <div class="hero-contact">
+          <span>
+            Based near Frankfurt, Germany · Open to relocation, on-site,
+            hybrid and remote work
+          </span>
 
-            <span>
-                Butzbach, Germany
-            </span>
-
-            <a href="mailto:Maria.Huhnstock@outlook.de">
-                Maria.Huhnstock@outlook.de
-            </a>
-
+          <a href="mailto:Maria.Huhnstock@outlook.de">
+            Maria.Huhnstock@outlook.de
+          </a>
         </div>
 
+        <div class="hero-actions">
+          <a class="button primary" href="#work">View projects</a>
+          <a class="button secondary" href="#cv">View CV</a>
 
-        <div class="hero-buttons">
+          <a
+            class="button secondary"
+            href="https://github.com/MariaHuhnstock"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
 
-            <a
-                href="#projects"
-                class="button primary"
-            >
-                View Projects
-            </a>
-
-
-            <a
-                href="#cv"
-                class="button secondary"
-            >
-                View CV
-            </a>
-
-
-            <a
-                href="https://github.com/MariaHuhnstock"
-                class="button secondary"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-
-
-            <a
-                href="https://www.linkedin.com/in/maria-huhnstock/"
-                class="button secondary"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                LinkedIn
-            </a>
-
+          <a
+            class="button secondary"
+            href="https://www.linkedin.com/in/maria-huhnstock/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
         </div>
-
-    </header>
-
-
-
-    <main>
-
-
-        <!-- ==================================================
-             PROJECTS
-        =================================================== -->
-
-        <section
-            id="projects"
-            class="section"
-        >
-
-            <div class="section-heading">
-
-                <p class="eyebrow">
-                    SELECTED WORK
-                </p>
-
-                <h2>
-                    Projects
-                </h2>
-
-                <p>
-                    A selection of projects focusing on
-                    gameplay, systems and technical design.
-                </p>
-
-            </div>
-
-
-            <div class="project-grid">
-
-
-                <!-- DON'T LOOK -->
-
-                <article class="project-card">
-
-                    <div class="project-image placeholder">
-                        DON'T LOOK
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            GAMEPLAY DESIGN · HORROR DESIGN
-                        </p>
-
-                        <h3>
-                            Don't Look
-                        </h3>
-
-                        <p>
-                            A first-person psychological horror
-                            prototype built around everyday
-                            household tasks, environmental tension
-                            and scripted events.
-                        </p>
-
-                        <div class="tags">
-
-                            <span>Unity</span>
-                            <span>C#</span>
-                            <span>Gameplay Design</span>
-                            <span>Interaction Design</span>
-
-                        </div>
-
-                        <span class="project-link coming-soon">
-                            Case Study coming soon
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- VERTICAL SHOOTER -->
-
-                <article class="project-card">
-
-                    <div class="project-image placeholder">
-                        VERTICAL SHOOTER
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            SYSTEMS DESIGN · PROGRESSION
-                        </p>
-
-                        <h3>
-                            Vertical Shooter
-                        </h3>
-
-                        <p>
-                            A vertical shooter prototype featuring
-                            enemy progression, boss scaling,
-                            player upgrades and a shop system.
-                        </p>
-
-                        <div class="tags">
-
-                            <span>C++</span>
-                            <span>openFrameworks</span>
-                            <span>Systems Design</span>
-                            <span>Progression</span>
-
-                        </div>
-
-                        <span class="project-link coming-soon">
-                            Case Study coming soon
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- SPACEBASTION -->
-
-                <article class="project-card">
-
-                    <div class="project-image placeholder">
-                        SPACEBASTION
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            TECHNICAL DESIGN · SYSTEMS
-                        </p>
-
-                        <h3>
-                            SpaceBastion
-                        </h3>
-
-                        <p>
-                            A university game project where I worked
-                            on dynamic weather and lighting systems
-                            to support atmosphere and environmental
-                            variation.
-                        </p>
-
-                        <div class="tags">
-
-                            <span>Unity</span>
-                            <span>C#</span>
-                            <span>Technical Design</span>
-                            <span>Lighting</span>
-
-                        </div>
-
-                        <span class="project-link coming-soon">
-                            Case Study coming soon
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==================================================
-             ABOUT
-        =================================================== -->
-
-        <section
-            id="about"
-            class="section alternate"
-        >
-
-            <div class="content-wrapper">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        ABOUT ME
-                    </p>
-
-                    <h2>
-                        Design meets implementation.
-                    </h2>
-
-                </div>
-
-
-                <div class="about-text">
-
-                    <p>
-                        My background is in Game Design & Development,
-                        and I enjoy working at the intersection of
-                        creative game design and technical implementation.
-                    </p>
-
-
-                    <p>
-                        My main interests are gameplay mechanics,
-                        systems design and prototyping. I particularly
-                        enjoy turning ideas into playable systems,
-                        testing them in practice and improving them
-                        through iteration.
-                    </p>
-
-
-                    <p>
-                        I am currently looking for opportunities
-                        where I can contribute to professional game
-                        development while continuing to grow as a
-                        designer and developer.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==================================================
-             CV
-        =================================================== -->
-
-        <section
-            id="cv"
-            class="section"
-        >
-
-            <div class="section-heading">
-
-                <p class="eyebrow">
-                    CURRICULUM VITAE
-                </p>
-
-                <h2>
-                    CV
-                </h2>
-
-                <p>
-                    My CV is available in English and German.
-                    You can open it directly or download it as a PDF.
-                </p>
-
-            </div>
-
-
-            <div class="cv-grid">
-
-
-                <!-- ENGLISH CV -->
-
-                <article class="cv-card">
-
-                    <div>
-
-                        <p class="cv-language">
-                            ENGLISH
-                        </p>
-
-                        <h3>
-                            Curriculum Vitae
-                        </h3>
-
-                        <p>
-                            English version of my CV.
-                        </p>
-
-                    </div>
-
-
-                    <div class="cv-buttons">
-
-                        <a
-                            href="https://github.com/MariaHuhnstock/MariaHuhnstock.github.io/blob/main/CV_Maria_Huhnstock_EN.pdf"
-                            class="button primary"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Open CV
-                        </a>
-
-
-                        <a
-                            href="https://raw.githubusercontent.com/MariaHuhnstock/MariaHuhnstock.github.io/main/CV_Maria_Huhnstock_EN.pdf"
-                            class="button secondary"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Download
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- GERMAN CV -->
-
-                <article class="cv-card">
-
-                    <div>
-
-                        <p class="cv-language">
-                            DEUTSCH
-                        </p>
-
-                        <h3>
-                            Lebenslauf
-                        </h3>
-
-                        <p>
-                            German version of my CV.
-                        </p>
-
-                    </div>
-
-
-                    <div class="cv-buttons">
-
-                        <a
-                            href="https://github.com/MariaHuhnstock/MariaHuhnstock.github.io/blob/main/CV_Maria_Huhnstock_DE.pdf"
-                            class="button primary"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Open CV
-                        </a>
-
-
-                        <a
-                            href="https://raw.githubusercontent.com/MariaHuhnstock/MariaHuhnstock.github.io/main/CV_Maria_Huhnstock_DE.pdf"
-                            class="button secondary"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Download
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==================================================
-             SKILLS
-        =================================================== -->
-
-        <section
-            id="skills"
-            class="section alternate"
-        >
-
-            <div class="content-wrapper">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        SKILLS
-                    </p>
-
-                    <h2>
-                        What I work with
-                    </h2>
-
-                </div>
-
-
-                <div class="skills-grid">
-
-
-                    <div class="skill-group">
-
-                        <h3>
-                            Game Design
-                        </h3>
-
-                        <ul>
-
-                            <li>Gameplay Design</li>
-                            <li>Systems Design</li>
-                            <li>Game Mechanics</li>
-                            <li>Interaction Design</li>
-                            <li>Prototyping</li>
-                            <li>Game Design Documentation</li>
-                            <li>Iterative Design</li>
-
-                        </ul>
-
-                    </div>
-
-
-
-                    <div class="skill-group">
-
-                        <h3>
-                            Development & Tools
-                        </h3>
-
-                        <ul>
-
-                            <li>Unity</li>
-                            <li>C#</li>
-                            <li>C++</li>
-                            <li>openFrameworks</li>
-                            <li>Git & GitHub</li>
-                            <li>Visual Studio</li>
-                            <li>Microsoft Office</li>
-
-                        </ul>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==================================================
-             CONTACT
-        =================================================== -->
-
-        <section
-            id="contact"
-            class="section contact"
-        >
-
-            <p class="eyebrow">
-                CONTACT
-            </p>
-
-            <h2>
-                Let's create something.
-            </h2>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2 id="work-title">Projects</h2>
+
+        <p>
+          Three focused case studies showing both the design decisions and
+          the technical implementation behind each prototype.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-visual visual-dontlook" aria-hidden="true">
+            <span class="visual-title">DON’T LOOK</span>
+
+            <div class="room room-a"></div>
+            <div class="room room-b"></div>
+            <div class="room room-c"></div>
+            <div class="route-line"></div>
+            <div class="pulse-point"></div>
+          </div>
+
+          <div class="project-content">
+            <p class="project-type">UNITY · C# · INTERACTION DESIGN</p>
+            <h3>Don’t Look</h3>
 
             <p>
-                I'm currently looking for opportunities in
-                Game Design, Gameplay Design and Technical Design.
+              A first-person psychological horror prototype that turns
+              ordinary household tasks into a guided sequence of tension
+              and scripted events.
             </p>
 
+            <dl class="contribution">
+              <div>
+                <dt>My contribution</dt>
+                <dd>Task flow, interactions and UI feedback</dd>
+              </div>
 
-            <div class="contact-info">
+              <div>
+                <dt>Design focus</dt>
+                <dd>Player guidance and horror pacing</dd>
+              </div>
+            </dl>
 
-                <span>
-                    Butzbach, Germany
-                </span>
-
-                <a href="mailto:Maria.Huhnstock@outlook.de">
-                    Maria.Huhnstock@outlook.de
-                </a>
-
+            <div class="tags">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Gameplay</span>
+              <span>GDD</span>
             </div>
 
+            <button
+              class="project-link"
+              type="button"
+              data-open-project="dontlook"
+            >
+              Open case study <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </article>
 
-            <div class="hero-buttons">
+        <article class="project-card reveal">
+          <div class="project-visual visual-space" aria-hidden="true">
+            <span class="visual-title">SPACEBASTION</span>
 
-                <a
-                    href="mailto:Maria.Huhnstock@outlook.de"
-                    class="button primary"
-                >
-                    Email
-                </a>
+            <div class="planet"></div>
+            <div class="orbit"></div>
+            <div class="sun"></div>
+          </div>
 
+          <div class="project-content">
+            <p class="project-type">UNITY · C# · TECHNICAL DESIGN</p>
+            <h3>SpaceBastion</h3>
 
-                <a
-                    href="https://github.com/MariaHuhnstock"
-                    class="button secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
+            <p>
+              A university team project where I created adjustable weather
+              and lighting systems to support atmosphere and environmental
+              variation.
+            </p>
 
+            <dl class="contribution">
+              <div>
+                <dt>My contribution</dt>
+                <dd>Weather and day/night systems</dd>
+              </div>
 
-                <a
-                    href="https://www.linkedin.com/in/maria-huhnstock/"
-                    class="button secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
+              <div>
+                <dt>Design focus</dt>
+                <dd>Reusable, designer-facing controls</dd>
+              </div>
+            </dl>
 
+            <div class="tags">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Systems</span>
+              <span>Team project</span>
             </div>
 
+            <button
+              class="project-link"
+              type="button"
+              data-open-project="spacebastion"
+            >
+              Open case study <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual visual-shooter" aria-hidden="true">
+            <span class="visual-title">VERTICAL SHOOTER</span>
+
+            <div class="enemy e-one">◆</div>
+            <div class="enemy e-two">◆</div>
+            <div class="enemy e-three">◆</div>
+            <div class="ship">▲</div>
+            <div class="shot s-one"></div>
+            <div class="shot s-two"></div>
+          </div>
+
+          <div class="project-content">
+            <p class="project-type">
+              OPENFRAMEWORKS · C++ · LEARNING PROJECT
+            </p>
+
+            <h3>Vertical Shooter</h3>
+
+            <p>
+              My completed C++ project: an arcade loop with enemy types,
+              boss scaling, upgrades, a shop and persistent highscores.
+            </p>
+
+            <dl class="contribution">
+              <div>
+                <dt>My contribution</dt>
+                <dd>Full design and implementation</dd>
+              </div>
+
+              <div>
+                <dt>Design focus</dt>
+                <dd>Combat and progression loop</dd>
+              </div>
+            </dl>
+
+            <div class="tags">
+              <span>C++</span>
+              <span>openFrameworks</span>
+              <span>Progression</span>
+            </div>
+
+            <button
+              class="project-link"
+              type="button"
+              data-open-project="shooter"
+            >
+              Open case study <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section
+      class="section alternate"
+      id="profile"
+      aria-labelledby="profile-title"
+    >
+      <div class="profile-layout">
+        <div class="about-card reveal">
+          <p class="eyebrow">ABOUT ME</p>
+          <h2 id="profile-title">Design meets implementation.</h2>
+
+          <p>
+            Prototyping is how I work: I reduce an idea to its important
+            rules, implement it, playtest it and iterate. Because most of
+            my portfolio projects were built independently and within a
+            limited timeframe, they deliberately focus on selected
+            mechanics instead of imitating a full production.
+          </p>
+
+          <p>
+            In a studio, I want to bring that end-to-end perspective into
+            a multidisciplinary team, deepen my Unity/C# work and
+            contribute wherever game design and programming meet.
+          </p>
+
+          <p>
+            I am currently based near Frankfurt, but I search beyond the
+            region and am open to relocating for the right opportunity.
+            On-site, hybrid and remote positions are all options for me.
+          </p>
+
+          <div class="role-row">
+            <b>Target roles</b>
+            <span>Game Design</span>
+            <span>Game Programming</span>
+          </div>
+
+          <div class="skills">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Gameplay Systems</span>
+            <span>Prototyping</span>
+            <span>GDDs</span>
+            <span>Git & GitHub</span>
+
+            <span class="secondary-skill">
+              Additional: C++ / openFrameworks
+            </span>
+          </div>
+        </div>
+
+        <div class="cv-column reveal" id="cv">
+          <p class="eyebrow">CURRICULUM VITAE</p>
+          <h2>CV</h2>
+
+          <p>
+            Both versions can be opened directly in the browser or
+            downloaded as a PDF.
+          </p>
+
+          <article class="cv-card">
+            <div class="cv-language">DE</div>
+
+            <div>
+              <h3>Lebenslauf</h3>
+              <p>Deutsche Version</p>
+            </div>
+
+            <div class="cv-actions">
+              <a
+                href="CV_Maria_Huhnstock_DE.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                Ansehen
+              </a>
+
+              <a
+                href="CV_Maria_Huhnstock_DE.pdf"
+                download="Maria_Huhnstock_Lebenslauf_DE.pdf"
+              >
+                Download
+              </a>
+            </div>
+          </article>
+
+          <article class="cv-card">
+            <div class="cv-language">EN</div>
+
+            <div>
+              <h3>Curriculum Vitae</h3>
+              <p>English version</p>
+            </div>
+
+            <div class="cv-actions">
+              <a
+                href="CV_Maria_Huhnstock_EN.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                View
+              </a>
+
+              <a
+                href="CV_Maria_Huhnstock_EN.pdf"
+                download="Maria_Huhnstock_CV_EN.pdf"
+              >
+                Download
+              </a>
+            </div>
+          </article>
+
+          <div class="contact-card">
+            <small>CONTACT & PROFILES</small>
+
+            <a href="mailto:Maria.Huhnstock@outlook.de">
+              <span>Email</span>
+              <b>Maria.Huhnstock@outlook.de</b>
+              <i>→</i>
+            </a>
+
+            <a
+              href="https://github.com/MariaHuhnstock"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>GitHub</span>
+              <b>github.com/MariaHuhnstock</b>
+              <i>↗</i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/maria-huhnstock/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>LinkedIn</span>
+              <b>Maria Huhnstock</b>
+              <i>↗</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Maria Huhnstock · Game Design & Development Portfolio</p>
+
+    <div>
+      <a
+        href="https://github.com/MariaHuhnstock"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/maria-huhnstock/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <dialog
+    class="case-dialog"
+    id="dialog-dontlook"
+    aria-labelledby="dontlook-title"
+  >
+    <div class="dialog-shell">
+      <button
+        class="dialog-close"
+        type="button"
+        data-close-dialog
+        aria-label="Close case study"
+      >
+        ×
+      </button>
+
+      <p class="eyebrow">CASE STUDY · UNITY / C#</p>
+      <h2 id="dontlook-title">Don’t Look</h2>
+
+      <p class="dialog-lead">
+        A first-person psychological horror prototype where everyday
+        apartment tasks become the structure for tension, interruptions
+        and environmental storytelling.
+      </p>
+
+      <div class="case-grid">
+        <section>
+          <small>DESIGN CHALLENGE</small>
+          <h3>Guide without breaking immersion</h3>
+
+          <p>
+            The player needs to understand a fixed sequence of tasks while
+            mouse-look and exploration remain available. Contextual
+            thoughts communicate the next goal and explain locked
+            interactions.
+          </p>
         </section>
 
+        <section>
+          <small>MY CONTRIBUTION</small>
+          <h3>Interaction flow and implementation</h3>
 
-    </main>
+          <ul>
+            <li>Designed the 19-step task sequence</li>
+            <li>Built pickup, carrying and placement rules</li>
+            <li>Added contextual thoughts and early-action feedback</li>
+            <li>Implemented timed microwave, watering and mirror events</li>
+          </ul>
+        </section>
 
+        <section>
+          <small>PROJECT STRUCTURE</small>
+          <h3>Two core responsibilities</h3>
 
+          <div class="architecture">
+            <span>
+              Player movement<br>
+              <i>input · look · locomotion</i>
+            </span>
 
-    <!-- ==================================================
-         FOOTER
-    =================================================== -->
+            <b>→</b>
 
-    <footer>
+            <span>
+              Interactions<br>
+              <i>tasks · objects · thoughts</i>
+            </span>
+          </div>
+        </section>
 
-        <p>
-            © 2026 Maria Huhnstock
-        </p>
+        <section>
+          <small>GDD SNAPSHOT</small>
+          <h3>Documented rules</h3>
 
-        <p>
-            Game Design & Development Portfolio
-        </p>
+          <div class="gdd-list">
+            <span>Core loop</span>
+            <span>19-step task flow</span>
+            <span>Held-item rules</span>
+            <span>Feedback language</span>
+            <span>Horror beats</span>
+            <span>Audio / VFX triggers</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </dialog>
 
-    </footer>
+  <dialog
+    class="case-dialog"
+    id="dialog-spacebastion"
+    aria-labelledby="space-title"
+  >
+    <div class="dialog-shell">
+      <button
+        class="dialog-close"
+        type="button"
+        data-close-dialog
+        aria-label="Close case study"
+      >
+        ×
+      </button>
 
+      <p class="eyebrow">CASE STUDY · UNITY / C#</p>
+      <h2 id="space-title">SpaceBastion</h2>
 
+      <p class="dialog-lead">
+        A team project where I was responsible for the weather and lighting
+        systems that shape the game world’s atmosphere.
+      </p>
+
+      <div class="case-grid">
+        <section>
+          <small>DESIGN CHALLENGE</small>
+          <h3>Make atmosphere adjustable</h3>
+
+          <p>
+            Lighting and rain needed to support changing moods while
+            remaining easy to tune in the Unity Inspector instead of being
+            fixed to one scene setup.
+          </p>
+        </section>
+
+        <section>
+          <small>MY CONTRIBUTION</small>
+          <h3>Weather and day/night logic</h3>
+
+          <ul>
+            <li>Rain with manual and automatic modes</li>
+            <li>Light orbit around a configurable center</li>
+            <li>Midday alignment for a readable 12-hour cycle</li>
+            <li>Designer-facing timing and intensity controls</li>
+          </ul>
+        </section>
+
+        <section>
+          <small>SYSTEM FLOW</small>
+          <h3>Small inputs, visible states</h3>
+
+          <div class="architecture">
+            <span>
+              Time / toggle<br>
+              <i>designer input</i>
+            </span>
+
+            <b>→</b>
+
+            <span>
+              Environment<br>
+              <i>orbit · intensity · rain</i>
+            </span>
+          </div>
+        </section>
+
+        <section>
+          <small>GDD SNAPSHOT</small>
+          <h3>System specification</h3>
+
+          <div class="gdd-list">
+            <span>Weather states</span>
+            <span>Transition rules</span>
+            <span>12-hour cycle</span>
+            <span>Lighting targets</span>
+            <span>Inspector controls</span>
+            <span>Test cases</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog
+    class="case-dialog"
+    id="dialog-shooter"
+    aria-labelledby="shooter-title"
+  >
+    <div class="dialog-shell">
+      <button
+        class="dialog-close"
+        type="button"
+        data-close-dialog
+        aria-label="Close case study"
+      >
+        ×
+      </button>
+
+      <p class="eyebrow">CASE STUDY · OPENFRAMEWORKS / C++</p>
+      <h2 id="shooter-title">Vertical Shooter</h2>
+
+      <p class="dialog-lead">
+        A self-contained learning project that connects combat, enemy
+        variety, upgrades, boss scaling and persistence into one replayable
+        loop.
+      </p>
+
+      <div class="case-grid">
+        <section>
+          <small>DESIGN CHALLENGE</small>
+          <h3>Keep escalation readable</h3>
+
+          <p>
+            Three enemy archetypes with one, two and three hit points
+            establish a clear difficulty language. Boss encounters and
+            upgrades add longer-term decisions.
+          </p>
+        </section>
+
+        <section>
+          <small>MY CONTRIBUTION</small>
+          <h3>Full system design and build</h3>
+
+          <ul>
+            <li>Combat and three enemy types</li>
+            <li>Boss health: 10 + 5 × level</li>
+            <li>Shop for fire rate, multishot and maximum HP</li>
+            <li>Level progression and persistent highscore file</li>
+          </ul>
+        </section>
+
+        <section>
+          <small>SYSTEM LOOP</small>
+          <h3>Progress feeds the next run</h3>
+
+          <div class="architecture">
+            <span>
+              Combat<br>
+              <i>kills · score · damage</i>
+            </span>
+
+            <b>→</b>
+
+            <span>
+              Progression<br>
+              <i>boss · shop · upgrades</i>
+            </span>
+          </div>
+        </section>
+
+        <section>
+          <small>GDD SNAPSHOT</small>
+          <h3>Balanced variables</h3>
+
+          <div class="gdd-list">
+            <span>Enemy HP tiers</span>
+            <span>Boss formula</span>
+            <span>Upgrade catalog</span>
+            <span>Start HP: 5</span>
+            <span>Level curve</span>
+            <span>Highscore rules</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </dialog>
 </body>
-
 </html>
