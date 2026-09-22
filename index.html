@@ -198,51 +198,55 @@
         </article>
 
         <article class="project-card reveal">
-          <div class="project-visual visual-shooter" aria-hidden="true">
-            <span class="visual-title">VERTICAL SHOOTER</span>
+          <div class="project-visual visual-starfall" aria-hidden="true">
+            <span class="visual-title">STARFALL PROTOCOL</span>
 
-            <div class="enemy e-one">◆</div>
-            <div class="enemy e-two">◆</div>
-            <div class="enemy e-three">◆</div>
-            <div class="ship">▲</div>
-            <div class="shot s-one"></div>
-            <div class="shot s-two"></div>
+            <div class="star star-one">✦</div>
+            <div class="star star-two">·</div>
+            <div class="star star-three">✧</div>
+            <div class="starfall-enemy enemy-one">◆</div>
+            <div class="starfall-enemy enemy-two">◆</div>
+            <div class="starfall-ship">▲</div>
+            <div class="starfall-shot shot-one"></div>
+            <div class="starfall-shot shot-two"></div>
           </div>
 
           <div class="project-content">
             <p class="project-type">
-              OPENFRAMEWORKS · C++ · LEARNING PROJECT
+              UNITY · C# · GAMEPLAY PROGRAMMING
             </p>
 
-            <h3>Vertical Shooter</h3>
+            <h3>Starfall Protocol</h3>
 
             <p>
-              My completed C++ project: an arcade loop with enemy types,
-              boss scaling, upgrades, a shop and persistent highscores.
+              An endless vertical shooter where the player protects the Earth
+              against escalating enemy waves, chooses upgrades and faces a
+              multi-phase boss encounter.
             </p>
 
             <dl class="contribution">
               <div>
                 <dt>My contribution</dt>
-                <dd>Full design and implementation</dd>
+                <dd>Gameplay systems, architecture and visual design</dd>
               </div>
 
               <div>
                 <dt>Design focus</dt>
-                <dd>Combat and progression loop</dd>
+                <dd>Readable escalation and replayable progression</dd>
               </div>
             </dl>
 
             <div class="tags">
-              <span>C++</span>
-              <span>openFrameworks</span>
-              <span>Progression</span>
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Object Pooling</span>
+              <span>GDD</span>
             </div>
 
             <button
               class="project-link"
               type="button"
-              data-open-project="shooter"
+              data-open-project="starfall"
             >
               Open case study <span aria-hidden="true">→</span>
             </button>
@@ -590,8 +594,8 @@
 
   <dialog
     class="case-dialog"
-    id="dialog-shooter"
-    aria-labelledby="shooter-title"
+    id="dialog-starfall"
+    aria-labelledby="starfall-title"
   >
     <div class="dialog-shell">
       <button
@@ -603,13 +607,12 @@
         ×
       </button>
 
-      <p class="eyebrow">CASE STUDY · OPENFRAMEWORKS / C++</p>
-      <h2 id="shooter-title">Vertical Shooter</h2>
+      <p class="eyebrow">CASE STUDY · UNITY / C#</p>
+      <h2 id="starfall-title">Starfall Protocol</h2>
 
       <p class="dialog-lead">
-        A self-contained learning project that connects combat, enemy
-        variety, upgrades, boss scaling and persistence into one replayable
-        loop.
+        An endless vertical shooter focused on readable escalation, clean
+        gameplay architecture and replayable progression.
       </p>
 
       <div class="case-grid">
@@ -618,21 +621,23 @@
           <h3>Keep escalation readable</h3>
 
           <p>
-            Three enemy archetypes with one, two and three hit points
-            establish a clear difficulty language. Boss encounters and
-            upgrades add longer-term decisions.
+            Three enemy types create distinct threats while the spawn rate
+            and enemy composition increase continuously over the run.
+            The Earth also has its own health bar, creating a second failure
+            condition beyond the player's health.
           </p>
         </section>
 
         <section>
           <small>MY CONTRIBUTION</small>
-          <h3>Full system design and build</h3>
+          <h3>Gameplay systems and architecture</h3>
 
           <ul>
-            <li>Combat and three enemy types</li>
-            <li>Boss health: 10 + 5 × level</li>
-            <li>Shop for fire rate, multishot and maximum HP</li>
-            <li>Level progression and persistent highscore file</li>
+            <li>Automatic shooting and horizontal movement</li>
+            <li>Drifter, Weaver and Rusher enemy behaviours</li>
+            <li>Four upgrades offered as three choices</li>
+            <li>Boss with two attack phases</li>
+            <li>Local highscore saved with PlayerPrefs</li>
           </ul>
         </section>
 
@@ -643,31 +648,43 @@
           <div class="architecture">
             <span>
               Combat<br>
-              <i>kills · score · damage</i>
+              <i>waves · score · damage</i>
             </span>
 
             <b>→</b>
 
             <span>
               Progression<br>
-              <i>boss · shop · upgrades</i>
+              <i>upgrades · boss · highscore</i>
             </span>
           </div>
         </section>
 
         <section>
-          <small>GDD SNAPSHOT</small>
-          <h3>Balanced variables</h3>
+          <small>TECHNICAL STRUCTURE</small>
+          <h3>Data-driven systems</h3>
 
           <div class="gdd-list">
-            <span>Enemy HP tiers</span>
-            <span>Boss formula</span>
-            <span>Upgrade catalog</span>
-            <span>Start HP: 5</span>
-            <span>Level curve</span>
-            <span>Highscore rules</span>
+            <span>Object Pooling</span>
+            <span>ScriptableObjects</span>
+            <span>IDamageable</span>
+            <span>IMovementPattern</span>
+            <span>UpgradeData</span>
+            <span>Iterative balancing</span>
           </div>
         </section>
+      </div>
+
+      <div class="dialog-actions">
+        <a class="button primary" href="Starfall_Protocol_GDD_EN.pdf" target="_blank" rel="noopener noreferrer">
+          Read GDD · English
+        </a>
+        <a class="button secondary" href="Starfall_Protocol_GDD_DE.pdf" target="_blank" rel="noopener noreferrer">
+          GDD lesen · Deutsch
+        </a>
+        <a class="button secondary" href="https://github.com/MariaHuhnstock/StarfallProtocol" target="_blank" rel="noopener noreferrer">
+          View repository
+        </a>
       </div>
     </div>
   </dialog>
