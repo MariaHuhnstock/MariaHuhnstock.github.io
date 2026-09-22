@@ -1236,3 +1236,71 @@ footer a:hover {
     grid-column: 1 / -1;
   }
 }
+
+.visual-starfall {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(117, 66, 212, 0.5), transparent 25%),
+    radial-gradient(circle at 20% 20%, rgba(89, 216, 213, 0.2), transparent 22%),
+    linear-gradient(135deg, #080912, #17102f 55%, #090912);
+}
+
+.visual-starfall::before {
+  content: "✦  ·  ·    ✧       ·  ✦   ·";
+  position: absolute;
+  inset: 20px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1.15rem;
+  letter-spacing: 0.75rem;
+  line-height: 3rem;
+}
+
+.starfall-enemy,
+.starfall-ship,
+.starfall-shot,
+.star {
+  position: absolute;
+}
+
+.star {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.star-one { left: 20%; top: 25%; color: var(--cyan); }
+.star-two { right: 25%; top: 22%; }
+.star-three { left: 67%; top: 48%; color: var(--purple-light); }
+
+.starfall-enemy {
+  color: #e66cff;
+  text-shadow: 0 0 13px #c04dff;
+}
+
+.enemy-one { left: 28%; top: 35%; }
+.enemy-two { right: 26%; top: 28%; font-size: 1.25rem; }
+
+.starfall-ship {
+  left: calc(50% - 10px);
+  bottom: 25px;
+  color: var(--cyan);
+  font-size: 1.5rem;
+  text-shadow: 0 0 15px rgba(89, 216, 213, 0.8);
+}
+
+.starfall-shot {
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 22px;
+  background: var(--purple-light);
+  box-shadow: 0 0 8px var(--purple);
+}
+
+.shot-one { bottom: 58px; }
+.shot-two { bottom: 91px; }
+
+.dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-top: 34px;
+}
