@@ -259,7 +259,7 @@ h1, h2, h3, h4, p, dl, dd, ol, ul, figure { margin: 0; }
 .work { display: flex; flex-direction: column; gap: 48px; }
 .work__intro { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; }
 .work__intro > div { display: flex; flex-direction: column; gap: 12px; }
-.work__intro p { max-width: 40ch; font-size: 15px; color: var(--text-muted); }
+.work__intro p { max-width: 72ch; font-size: 15px; color: var(--text-muted); }
 
 /* ---------- Medien mit Eckmarken ---------- */
 .media {
