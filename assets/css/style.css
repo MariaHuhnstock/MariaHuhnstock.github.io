@@ -582,7 +582,6 @@ h1, h2, h3, h4, p, dl, dd, ol, ul, figure { margin: 0; }
 @media (max-width: 640px) {
   .section > .container { padding-block: 64px; }
   .work { gap: 40px; }
-  .cs-section__label { flex-basis: 100%; }
   .nav { gap: 4px 18px; }
 }
 
