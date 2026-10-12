@@ -3,7 +3,7 @@
    Design-System siehe DESIGN.md
    ========================================================================== */
 
-/* ---------- Schriften (lokal gehostet, siehe ANLEITUNG.md) ---------- */
+/* ---------- Schriften (lokal gehostet) ---------- */
 @font-face {
   font-family: "Geist";
   src: url("../fonts/geist-400.woff2") format("woff2");
@@ -255,22 +255,11 @@ h1, h2, h3, h4, p, dl, dd, ol, ul, figure { margin: 0; }
 .hero__lead { max-width: 50ch; font-size: 18px; color: var(--text-muted); }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
-/* ---------- Projekte ---------- */
-.work { display: flex; flex-direction: column; gap: 128px; }
+/* ---------- Projekte (Einleitung) ---------- */
+.work { display: flex; flex-direction: column; gap: 48px; }
 .work__intro { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; }
 .work__intro > div { display: flex; flex-direction: column; gap: 12px; }
 .work__intro p { max-width: 40ch; font-size: 15px; color: var(--text-muted); }
-
-.project { display: flex; flex-direction: column; gap: 28px; }
-.project__head { display: flex; flex-direction: column; gap: 12px; }
-.project__title { font-size: clamp(40px, 5.5vw, 72px); line-height: 1.0; letter-spacing: -0.035em; font-weight: 600; }
-.project__body { display: flex; flex-wrap: wrap; gap: 32px 56px; }
-.project__text { flex: 7 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
-.project__meta { flex: 5 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
-.project__pitch { font-size: 22px; line-height: 1.35; letter-spacing: -0.01em; font-weight: 500; }
-.project__desc { max-width: 60ch; font-size: 16px; color: var(--text-muted); }
-.stat-line { font-family: var(--font-mono); font-size: 12px; line-height: 1.9; color: var(--text-muted); }
-.stat-line span { color: var(--text-faint); }
 
 /* ---------- Medien mit Eckmarken ---------- */
 .media {
@@ -496,6 +485,95 @@ h1, h2, h3, h4, p, dl, dd, ol, ul, figure { margin: 0; }
 .lang-block { display: flex; flex-direction: column; gap: 40px; }
 .lang-block[hidden] { display: none; }
 
+/* ---------- Projekt-Karten (nebeneinander, Vorschau beim Hovern) ---------- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+.game-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-1);
+  overflow: hidden;
+  transition: border-color 150ms var(--ease);
+}
+.game-card:hover, .game-card:focus-within { border-color: var(--border-strong); }
+.game-card__media { display: block; border-radius: 0; background: #0E1015; }
+.game-card__body { flex: 1; display: flex; flex-direction: column; gap: 12px; padding: 22px 22px 18px; }
+.game-card__label { font-size: 11px; }
+.game-card__title { font-size: 30px; line-height: 1.05; letter-spacing: -0.03em; font-weight: 600; }
+.game-card__title a { color: inherit; }
+.game-card:hover .game-card__title, .game-card:hover .game-card__title a { color: var(--accent); }
+.game-card__pitch { font-size: 15px; line-height: 1.55; color: var(--text-muted); }
+.game-card__tech { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-faint); }
+.game-card__footer {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.game-card__links { display: flex; gap: 6px; }
+.game-card__more { min-height: 40px; display: inline-flex; align-items: center; font-size: 14px; }
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 40px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-s);
+  color: var(--text);
+  transition: background 150ms var(--ease);
+}
+.icon-btn:hover { background: var(--surface-2); color: var(--text); }
+.icon-btn svg { width: 16px; height: 16px; }
+.icon-btn--play { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.icon-btn--play:hover { background: #B9A2FB; color: var(--accent-ink); }
+.icon-btn--soon { border-style: dashed; color: var(--text-faint); cursor: default; }
+.icon-btn--soon:hover { background: transparent; color: var(--text-faint); }
+
+.btn-group--compact { height: 40px; }
+.btn-group--compact .btn-group__label { padding: 0 10px; font-size: 13px; }
+.btn-group--compact a { min-width: 40px; font-size: 11px; }
+
+/* Vorschau-Hinweis und Fortschrittsbalken (setzt main.js automatisch, sobald ein Video da ist) */
+.preview-badge {
+  position: absolute;
+  z-index: 3;
+  top: 14px;
+  left: 36px;
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 4px;
+  background: rgba(11, 12, 16, 0.8);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  pointer-events: none;
+}
+.preview-progress {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: rgba(38, 42, 51, 0.8);
+  pointer-events: none;
+}
+.preview-progress span { display: block; width: 0; height: 100%; background: var(--accent); }
+
 /* ---------- Einblenden beim Scrollen ---------- */
 .reveal { opacity: 0; transform: translateY(8px); transition: opacity 250ms var(--ease), transform 250ms var(--ease); }
 .reveal.is-visible { opacity: 1; transform: none; }
@@ -503,7 +581,7 @@ h1, h2, h3, h4, p, dl, dd, ol, ul, figure { margin: 0; }
 /* ---------- Mobil ---------- */
 @media (max-width: 640px) {
   .section > .container { padding-block: 64px; }
-  .work { gap: 88px; }
+  .work { gap: 40px; }
   .cs-section__label { flex-basis: 100%; }
   .nav { gap: 4px 18px; }
 }
