@@ -377,10 +377,10 @@ h1, h2, h3, h4, p, dl, dd, ol, ul, figure { margin: 0; }
 .facts div { padding: 20px 20px 20px 0; display: flex; flex-direction: column; gap: 8px; }
 .facts dd { font-size: 16px; }
 
-.cs-section { display: flex; flex-wrap: wrap; gap: 32px 56px; }
-.cs-section__label { flex: 0 0 200px; display: flex; flex-direction: column; gap: 8px; }
-.cs-section__label h2 { font-size: 28px; letter-spacing: -0.02em; font-weight: 600; }
-.cs-section__body { flex: 1 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 48px; }
+.cs-section { display: flex; flex-direction: column; gap: 32px; }
+.cs-section__label { display: flex; flex-direction: column; gap: 8px; }
+.cs-section__label h2 { font-size: clamp(30px, 3vw, 40px); line-height: 1.1; letter-spacing: -0.02em; font-weight: 600; }
+.cs-section__body { min-width: 0; display: flex; flex-direction: column; gap: 48px; }
 .cs-section__body > p { max-width: 64ch; color: var(--text-muted); }
 .block { display: flex; flex-direction: column; gap: 16px; }
 
