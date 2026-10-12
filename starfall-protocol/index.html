@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starfall Protocol – Case Study · Maria Huhnstock</title>
+  <meta name="description" content="Case study: Starfall Protocol, a compact endless vertical shooter built in Unity 6 and C#.">
+  <meta name="theme-color" content="#0B0C10">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Starfall Protocol – Case Study">
+  <meta property="og:description" content="Endless vertical shooter where every missed enemy damages Earth. Unity 6 · C#.">
+  <meta property="og:url" content="https://mariahuhnstock.github.io/starfall-protocol/">
+  <meta property="og:image" content="https://mariahuhnstock.github.io/assets/og/og-starfall-protocol.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="../assets/fonts/geist-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/geist-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="back-link label" href="../#work"><span aria-hidden="true">←</span> All projects</a>
+      <a class="brand" href="../">Maria Huhnstock</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ KOPF ============ -->
+    <div class="container cs-hero">
+      <div class="cs-hero__head">
+        <p class="label label--accent">[01] Case study · Gameplay Programming</p>
+        <h1 class="cs-hero__title">Starfall Protocol</h1>
+      </div>
+
+      <figure>
+        <div class="media">
+          <!--
+          <video class="lazy-video" muted loop playsinline preload="none" poster="../assets/media/starfall-poster.jpg" aria-label="Gameplay of Starfall Protocol">
+            <source data-src="../assets/media/starfall.webm" type="video/webm">
+            <source data-src="../assets/media/starfall.mp4" type="video/mp4">
+          </video>
+          -->
+          <div class="media__placeholder" aria-hidden="true">[ TRAILER / GAMEPLAY ]</div>
+          <span class="corner-b" aria-hidden="true"></span>
+        </div>
+        <figcaption class="media-caption">Earth health at the bottom, player health top right – a missed enemy costs the planet, not just points.</figcaption>
+      </figure>
+
+      <p class="cs-hero__lead">A compact endless vertical shooter. Survive escalating waves and a multi-phase boss – while every enemy you miss crashes into Earth.</p>
+
+      <dl class="facts">
+        <div><dt class="label label--faint">Engine</dt><dd>Unity 6 · C#</dd></div>
+        <div><dt class="label label--faint">Role</dt><dd>Solo – design, code, visuals</dd></div>
+        <div><dt class="label label--faint">Run length</dt><dd>~5 minutes</dd></div>
+        <div><dt class="label label--faint">Platform</dt><dd>Browser (WebGL) · Desktop</dd></div>
+      </dl>
+
+      <div class="link-row">
+        <!-- Sobald online: span "btn--soon" löschen und diesen Link einkommentieren
+        <a class="btn btn--primary btn--small" href="play/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M6 12h4M8 10v4"/><circle cx="15.5" cy="12.5" r=".8"/><circle cx="18" cy="10.5" r=".8"/></svg>
+          Play in browser
+        </a>
+        -->
+        <div class="btn-group" role="group" aria-label="Game design document (PDF)">
+          <span class="btn-group__label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>GDD</span>
+          <a href="../Starfall_Protocol_GDD_EN.pdf" aria-label="GDD in English (PDF)">EN</a>
+          <a href="../Starfall_Protocol_GDD_DE.pdf" aria-label="GDD auf Deutsch (PDF)" hreflang="de">DE</a>
+        </div>
+        <a class="btn btn--small" href="https://github.com/MariaHuhnstock/StarfallProtocol">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7a5.4 5.4 0 0 0-1.5-3.8 5 5 0 0 0-.1-3.8s-1.2-.4-3.9 1.5a13.4 13.4 0 0 0-7 0C6.3 1.5 5.1 1.9 5.1 1.9a5 5 0 0 0-.1 3.8A5.4 5.4 0 0 0 3.5 9.5c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V23"/></svg>
+          GitHub
+        </a>
+        <span class="btn btn--small btn--soon" aria-disabled="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M6 12h4M8 10v4"/><circle cx="15.5" cy="12.5" r=".8"/><circle cx="18" cy="10.5" r=".8"/></svg>
+          Play in browser <span class="badge">SOON</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- ============ 01 DESIGN ============ -->
+    <section class="section">
+      <div class="container cs-section">
+        <div class="cs-section__label">
+          <p class="label label--accent">01</p>
+          <h2>Design</h2>
+        </div>
+        <div class="cs-section__body">
+          <p>Endless shooters usually punish only the player. Starfall adds a second health bar – Earth – so letting an enemy slip past is a real decision with a cost. Runs stay short so failure feels like an invitation to try again.</p>
+
+          <div class="block" data-reveal>
+            <h3 class="label label--faint">Design pillars</h3>
+            <div class="cards">
+              <div class="card"><p class="label label--accent">P1</p><h4>Every miss costs</h4><p>Enemies that get past damage Earth. Losing Earth ends the run.</p></div>
+              <div class="card"><p class="label label--accent">P2</p><h4>Short runs, fast retries</h4><p>About five minutes per run, straight back in after game over.</p></div>
+              <div class="card"><p class="label label--accent">P3</p><h4>Readable escalation</h4><p>Difficulty rises wave by wave, peaking in a multi-phase boss.</p></div>
+            </div>
+          </div>
+
+          <div class="block" data-reveal>
+            <h3 class="label label--faint">Core loop</h3>
+            <div class="diagram">
+              <ol class="flow" aria-label="Core loop">
+                <li><span class="node node--accent">Fly &amp; shoot</span><span class="flow-arrow" aria-hidden="true">→</span></li>
+                <li><span class="node">Clear wave</span><span class="flow-arrow" aria-hidden="true">→</span></li>
+                <li><span class="node">Pick upgrade</span><span class="flow-arrow" aria-hidden="true">→</span></li>
+                <li><span class="node">Next wave escalates</span><span class="label label--accent" aria-hidden="true">↺ repeat</span></li>
+              </ol>
+              <ol class="flow diagram__split" aria-label="Failure path">
+                <li><span class="node node--fail">Enemy slips past</span><span class="flow-arrow" aria-hidden="true">→</span></li>
+                <li><span class="node node--fail">Earth takes damage</span><span class="flow-arrow" aria-hidden="true">→</span></li>
+                <li><span class="node node--fail">Earth at 0 = game over</span></li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="block" data-reveal>
+            <h3 class="label label--faint">Scope</h3>
+            <dl class="scope">
+              <div><dt>enemy types</dt><dd>3</dd></div>
+              <div><dt>multi-phase boss</dt><dd>1</dd></div>
+              <div><dt>base weapon</dt><dd>1</dd></div>
+              <div><dt>upgrades</dt><dd>5</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 IMPLEMENTATION ============ -->
+    <section class="section">
+      <div class="container cs-section">
+        <div class="cs-section__label">
+          <p class="label label--accent">02</p>
+          <h2>Implementation</h2>
+        </div>
+        <div class="cs-section__body">
+          <div class="block" data-reveal>
+            <h3 class="label label--faint">Architecture</h3>
+            <div class="diagram">
+              <ol class="flow flow--mono" aria-label="Enemy flow">
+                <li><span class="node">WaveDirector</span><span class="flow-arrow" aria-hidden="true">→</span></li>
+                <li><span class="node node--accent">ObjectPool&lt;Enemy&gt;</span><span class="flow-arrow" aria-hidden="true">→</span></li>
+                <li><span class="node">Enemy · StateMachine</span><span class="flow-arrow" aria-hidden="true">→</span></li>
+                <li><span class="node">EarthHealth</span></li>
+              </ol>
+              <ol class="flow flow--mono" aria-label="Upgrade flow">
+                <li><span class="node node--data">UpgradeData · ScriptableObject</span><span class="flow-arrow" aria-hidden="true">→</span></li>
+                <li><span class="node">UpgradeSystem</span><span class="flow-arrow" aria-hidden="true">→</span></li>
+                <li><span class="node">PlayerController</span></li>
+              </ol>
+              <p class="diagram__note">Dashed = data assets, editable in the Inspector without touching code.</p>
+            </div>
+          </div>
+
+          <div class="block" data-reveal>
+            <h3 class="label label--faint">Key decisions</h3>
+            <div class="rows">
+              <div><h4>Object pooling</h4><p>Enemies and projectiles are reused instead of instantiated, keeping frame times stable in dense waves.</p></div>
+              <div><h4>ScriptableObjects</h4><p>Upgrades and enemy stats live in data assets, so balancing happens in the Inspector, not in code.</p></div>
+              <div><h4>Enemy state machine</h4><p>Each enemy type combines shared states, which keeps new behaviours – and the boss phases – small and testable.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 ITERATION ============ -->
+    <section class="section">
+      <div class="container cs-section">
+        <div class="cs-section__label">
+          <p class="label label--accent">03</p>
+          <h2>Iteration</h2>
+        </div>
+        <div class="cs-section__body">
+          <p>What playtesting showed – and what changed because of it.</p>
+          <!-- TODO: Platzhalter in [eckigen Klammern] nach den Playtests ersetzen -->
+          <ol class="iterations">
+            <li class="iteration" data-reveal>
+              <p class="label label--accent">Iteration 01 · [Topic, e.g. Earth damage]</p>
+              <dl>
+                <div><dt class="label label--faint">Observed</dt><dd>[What testers did or felt]</dd></div>
+                <div><dt class="label label--faint">Changed</dt><dd>[What you adjusted]</dd></div>
+                <div><dt class="label label--faint">Result</dt><dd>[What got better – ideally measurable]</dd></div>
+              </dl>
+            </li>
+            <li class="iteration" data-reveal>
+              <p class="label label--accent">Iteration 02 · [Topic]</p>
+              <dl>
+                <div><dt class="label label--faint">Observed</dt><dd>[What testers did or felt]</dd></div>
+                <div><dt class="label label--faint">Changed</dt><dd>[What you adjusted]</dd></div>
+                <div><dt class="label label--faint">Result</dt><dd>[What got better]</dd></div>
+              </dl>
+            </li>
+            <li class="iteration" data-reveal>
+              <p class="label label--accent">Iteration 03 · [Topic]</p>
+              <dl>
+                <div><dt class="label label--faint">Observed</dt><dd>[What testers did or felt]</dd></div>
+                <div><dt class="label label--faint">Changed</dt><dd>[What you adjusted]</dd></div>
+                <div><dt class="label label--faint">Result</dt><dd>[What got better]</dd></div>
+              </dl>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NÄCHSTES PROJEKT ============ -->
+    <section class="section">
+      <a class="next-project" href="../#nach-ladenschluss">
+        <div class="container">
+          <p class="label label--faint">Next project · [02]</p>
+          <div class="next-project__row">
+            <span class="next-project__title" lang="de">Nach Ladenschluss</span>
+            <span class="next-project__arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Maria Huhnstock · <a href="../impressum/">Impressum</a> · <a href="../datenschutz/">Privacy</a></span>
+      <a href="../#work">← All projects</a>
+    </div>
+  </footer>
+</body>
+</html>
