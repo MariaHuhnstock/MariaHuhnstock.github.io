@@ -39,16 +39,13 @@
 
       <figure>
         <div class="media">
-          <!--
-          <video class="lazy-video" muted loop playsinline preload="none" poster="../assets/media/starfall-poster.jpg" aria-label="Gameplay of Starfall Protocol">
-            <source data-src="../assets/media/starfall.webm" type="video/webm">
-            <source data-src="../assets/media/starfall.mp4" type="video/mp4">
+          <video controls playsinline preload="none" poster="../assets/media/starfall-trailer-poster.jpg" aria-label="Starfall Protocol trailer">
+            <source src="../assets/media/starfall-protocol-trailer.webm" type="video/webm">
+            <source src="../assets/media/starfall-protocol-trailer.mp4" type="video/mp4">
           </video>
-          -->
-          <div class="media__placeholder" aria-hidden="true">[ TRAILER / GAMEPLAY ]</div>
           <span class="corner-b" aria-hidden="true"></span>
         </div>
-        <figcaption class="media-caption">Earth health at the bottom, player health top right – a missed enemy costs the planet, not just points.</figcaption>
+        <figcaption class="media-caption">Trailer · 45 s. Earth health at the bottom, player health top right – a missed enemy costs the planet, not just points.</figcaption>
       </figure>
 
       <p class="cs-hero__lead">A compact endless vertical shooter. Survive a steadily rising stream of enemies and a two-phase boss – while every enemy you miss crashes into Earth.</p>
@@ -180,4 +177,62 @@
 
     <!-- ============ 03 ITERATION ============ -->
     <section class="section">
-      <div class="container
+      <div class="container cs-section">
+        <div class="cs-section__label">
+          <p class="label label--accent">03</p>
+          <h2>Iteration</h2>
+        </div>
+        <div class="cs-section__body">
+          <p>What playtesting showed – and what changed because of it.</p>
+          <ol class="iterations">
+            <li class="iteration" data-reveal>
+              <p class="label label--accent">Iteration 01 · Upgrade strength</p>
+              <dl>
+                <div><dt class="label label--faint">Observed</dt><dd>In early test runs the upgrades turned out too strong.</dd></div>
+                <div><dt class="label label--faint">Changed</dt><dd>Scaled back the fire-rate and speed bonuses in their UpgradeData assets.</dd></div>
+                <div><dt class="label label--faint">Result</dt><dd>Upgrades stay noticeable without flattening the difficulty curve.</dd></div>
+              </dl>
+            </li>
+            <li class="iteration" data-reveal>
+              <p class="label label--accent">Iteration 02 · Upgrade pacing</p>
+              <dl>
+                <div><dt class="label label--faint">Observed</dt><dd>With a fixed score interval, upgrades clustered early in a run and ran dry later.</dd></div>
+                <div><dt class="label label--faint">Changed</dt><dd>The gap to the next upgrade now grows after every pick (50 points, then +25 more each time).</dd></div>
+                <div><dt class="label label--faint">Result</dt><dd>Upgrade choices spread across the whole run instead of front-loading it.</dd></div>
+              </dl>
+            </li>
+            <li class="iteration" data-reveal>
+              <p class="label label--accent">Iteration 03 · Shield feedback</p>
+              <dl>
+                <div><dt class="label label--faint">Observed</dt><dd>Picking the shield had no visible effect – and testing showed it gave zero charges, because its value was stored as a fraction and rounded down.</dd></div>
+                <div><dt class="label label--faint">Changed</dt><dd>Shield values now count whole charges (minimum one), and a semi-transparent arc sits in front of the ship while a charge is active.</dd></div>
+                <div><dt class="label label--faint">Result</dt><dd>The shield works, and players can see at a glance whether they’re protected.</dd></div>
+              </dl>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NÄCHSTES PROJEKT ============ -->
+    <section class="section">
+      <a class="next-project" href="../#nach-ladenschluss">
+        <div class="container">
+          <p class="label label--faint">Next project · [02]</p>
+          <div class="next-project__row">
+            <span class="next-project__title" lang="de">Nach Ladenschluss</span>
+            <span class="next-project__arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Maria Huhnstock · <a href="../impressum/">Impressum</a> · <a href="../datenschutz/">Privacy</a></span>
+      <a href="../#work">← All projects</a>
+    </div>
+  </footer>
+</body>
+</html>
