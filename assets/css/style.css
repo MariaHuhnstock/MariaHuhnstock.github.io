@@ -591,3 +591,9 @@ h1, h2, h3, h4, p, dl, dd, ol, ul, figure { margin: 0; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* GDD noch nicht verfügbar / GDD not available yet */
+.btn-group--soon { border-style: dashed; color: var(--text-faint); cursor: default; }
+.btn-group--soon .btn-group__label { color: var(--text-faint); }
+.btn-group--soon > span:not(.btn-group__label) { display: inline-flex; align-items: center; padding: 0 12px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; }
+.game-card__label .badge { margin-left: 8px; vertical-align: 1px; white-space: nowrap; display: inline-block; }
